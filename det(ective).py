@@ -19,8 +19,8 @@ while (starter):
             print('Please enter postive integer values of row and column size of the matrix.\n')
         # Check if the given matrix size DOES NOT represent a square matrix.
         elif (rows != columns):
-            print('Determinant of a matrix A = aij of i!=j is UNDEFINED.')
-            print('Please enter a square matrix size, such as 3x3, 5x5.\n')
+            print('UNDEFINED.')
+            print('Please enter a square matrix size, such as 3x3 or 5x5.\n')
         # If everything is ok:
         else:
             break
@@ -40,12 +40,8 @@ for i in range(rows):
             # Keep prompting until valid input for all the entries is provided
             try:
                 entry = float(input(f"Enter the value for entry at row {i + 1}, column {j + 1}: "))
-                # Check if the given entry is non-zero
-                if entry >= 0:  
-                    matrix[i, j] = entry
-                    break 
-                else:
-                    print("Please enter a non-negative entry value.")
+                matrix[i, j] = entry
+                break 
             # If any of the inputs is invalid (non-numeric)
             except ValueError:
                 print("Invalid input. Please enter a valid numerical value.")
