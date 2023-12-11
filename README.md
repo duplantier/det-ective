@@ -1,9 +1,11 @@
-# det(ective): Determinant Detective - Matrix Determinant Calculator
+# det(ective)🔍: Determinant Detective - Matrix Determinant Calculator
 
-## Introduction
+## Introduction 📖
+
 Welcome to the Determinant Detective, a Python program designed to calculate the determinant of a square matrix efficiently. This program ensures user-friendly input validation and error handling to make the process as smooth as possible.
 
-## Table of Contents
+## Table of Contents 📋
+
 - [Features](#features)
 - [Getting Started](#getting-started)
 - [Usage](#usage)
@@ -11,19 +13,19 @@ Welcome to the Determinant Detective, a Python program designed to calculate the
 - [Algorithm](#algorithm)
 - [Contributing](#contributing)
 
-## Features
+## Features ✔️
 
 - Calculates the determinant of any square matrix.
 - Handles invalid inputs gracefully.
 - Works with matrices of various sizes.
 - Utilizes a recursive algorithm for determinant calculation.
 
-## Getting Started
+## Getting Started 🚀
 
 Before you start using the Determinant Detective, make sure you have the following prerequisites installed on your system:
 
 - Python
-- NumPy library**
+- NumPy library\*\*
 
 You can install NumPy using pip:
 
@@ -44,14 +46,15 @@ or Anaconda
 ```
 
 After you installed, activate your own environment and installed numpy via conda, go VSCode and press CTRL + Shift + P. Type:
+
 ```VSCode File Researcher
 > Python: Select Interpreter
 ```
+
 Then choose your own environment.
 Now you can import and use NumPy.
 
-
-## Usage
+## Usage 🖥️
 
 To use the Determinant Detective, follow these steps:
 
@@ -60,6 +63,7 @@ To use the Determinant Detective, follow these steps:
 2. You will be greeted with a welcome message and an introduction to the program.
 
 3. Enter the number of rows and columns for your matrix when prompted. Ensure the following conditions are met:
+
    - The matrix must have at least one row and one column.
    - Row and column sizes should be positive integers.
    - The matrix should be square (i.e., rows equal columns).
@@ -68,7 +72,7 @@ To use the Determinant Detective, follow these steps:
 
 5. The program will calculate and display the determinant of the matrix.
 
-## Example
+## Example 📝
 
 Lets walk through an example of using the Determinant Detective to calculate the determinant of a 3x3 matrix:
 
@@ -78,14 +82,13 @@ Lets walk through an example of using the Determinant Detective to calculate the
 7 8 9
 ```
 
-
 1. Run the program and enter `3` for the number of rows and `3` for the number of columns.
 
 2. Enter the values for each element as prompted.
 
 3. The program will display the determinant, which should be `0` for this particular matrix.
 
-## Algorithm
+## Algorithm 🧮
 
 The Determinant Detective uses a recursive algorithm for determinant calculation. Here's how it works:
 
@@ -97,7 +100,6 @@ determinant = (a * d) - (b * c)
 
 - For larger matrices, it breaks down the problem into smaller submatrices. It calculates the determinant recursively by calculating the cofactors and submatrices.
 
-## Contributing
+## Contributing 🤝
 
 If you'd like to contribute to the Determinant Detective, feel free to fork this repository, make improvements, and create a pull request. We welcome enhancements, bug fixes, and additional features.
-
